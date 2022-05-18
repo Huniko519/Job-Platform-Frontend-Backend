@@ -1,0 +1,154 @@
+.job-buttons {
+  padding: 1rem;
+  margin-left: 3rem;
+
+  button + button {
+    margin-left: 2rem;
+  }
+}
+
+.search-bar {
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: .3rem .5rem;
+
+  .search-icon {
+    margin-right: 0.5rem;
+  }
+
+  .search-input {
+    width: 90%;
+  }
+}
+
+.job-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 8px;
+
+  thead {
+    tr {
+      color: #979797;
+
+      td {
+        width: auto;
+      }
+
+    }
+  }
+
+  tbody {
+    tr {
+      color: #34525C;
+      background: white;
+      font-family: Lato, serif;
+      font-size: 14px;
+
+      td {
+        vertical-align: middle;
+        position: relative;
+      }
+
+      td.message-badge {
+        a {
+          span {
+            position: absolute;
+            color: white;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: red;
+            left: 50%;
+            top: 10%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.job-create {
+  padding: 2rem;
+
+  .case-actions {
+    margin-top: 3rem;
+
+    button {
+      margin-left: 1rem;
+    }
+  }
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.modal-gray {
+  @media only screen and (min-width: 768px) {
+    max-width: 600px;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    max-width: 900px;
+  }
+
+  .modal-content {
+    background-color: #ebecf0;
+  }
+}
+
+.dropzone-job {
+  padding: 10px 0;
+
+  .dropzone-preview-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .dropzone-upload {
+    margin-top: 10px;
+  }
+
+  .dropzone-submit {
+    display: none;
+  }
+
+  .dropzone-preview {
+    position: relative;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    max-width: 100px;
+    .dropzone-preview-remove {
+      transition: .3s;
+      display: none;
+    }
+    &:hover {
+      img {
+        opacity: .5;
+      }
+      .dropzone-preview-remove{
+        display: block;
+      }
+    }
+  }
+
+  .dropzone-previewImage {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  .dropzone-preview-remove {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    z-index: 99;
+    &:hover {
+      color: #007bff;
+    }
+  }
+}

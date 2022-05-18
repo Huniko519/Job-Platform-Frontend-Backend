@@ -1,0 +1,15 @@
+@import "./_mixins.scss";
+@import "./components/_index.scss";
+@import "./pages/_index.scss";
+@import "./common/_index.scss";
+
+/** your custom css code **/
+/*
+html {
+    background-color: $theme-color-1 !important;
+}
+*/
+
+section {
+  padding-top: 3rem;
+}
